@@ -1,0 +1,69 @@
+*, ::before*, ::after* {
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --pale-orange: #ffd1b3;
+  --font: 'DM Sans', sans-serif;
+}
+
+body {
+  background-color: var(--pale-orange);
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-family: var(--font);
+}
+
+.small-title {
+  font-family: var(--font);
+}
+
+.chart {
+  display: flex;
+  justify-content: space-between;
+  color: var(--medium-brown)
+}
+
+.top-card {
+  width: 400px;
+  height: auto;
+  background: var(--soft-red);
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.chart-card {
+  background: var(--cream);
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
