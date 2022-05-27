@@ -1,6 +1,7 @@
 const chart = document.getElementById('chart');
 const days = document.getElementById('days');
 
+// Fetch data
 fetch('data.json')
 .then(response => response.json())
 .then(data => {
